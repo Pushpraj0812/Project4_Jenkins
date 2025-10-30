@@ -20,10 +20,10 @@ public class DoctorTest {
 		// testnextPK();
 		// testFindByPk();
 		// testadd();
-		 testUpdate();
+		// testUpdate();
 		// testDelete();
 		// testSearch();
-		// testList();
+		 testList();
 	}
 
 	public static DoctorModel model = new DoctorModel();

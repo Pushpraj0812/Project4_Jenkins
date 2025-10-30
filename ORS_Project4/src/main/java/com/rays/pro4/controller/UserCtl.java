@@ -43,6 +43,7 @@ public class UserCtl extends BaseCtl {
 	 */
 	@Override
 	protected void preload(HttpServletRequest request) {
+		
 		RoleModel roleModel = new RoleModel();
 		try {
 			List<RoleBean> roleList = roleModel.list();

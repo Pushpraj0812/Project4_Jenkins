@@ -1,6 +1,7 @@
 package com.rays.pro4.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -16,22 +17,18 @@ import com.rays.pro4.Util.DataValidator;
 import com.rays.pro4.Util.PropertyReader;
 import com.rays.pro4.Util.ServletUtility;
 
-@WebServlet(name = "DoctorCtl", urlPatterns = { "/DoctorCtl" })
+@WebServlet(name = "DoctorCtl", urlPatterns = { "/ctl/DoctorCtl" })
 public class DoctorCtl extends BaseCtl {
 
 	@Override
 	protected void preload(HttpServletRequest request) {
 		
-		DoctorModel model = new DoctorModel();
-
-		try {
-
-			List rlist = model.list();
-			request.setAttribute("rlist", rlist);
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		 HashMap<String, String> expertise = new HashMap<String, String>();
+		 expertise.put("Cardiologist", "Cardiologist");
+		 expertise.put("Dermatologist", "Dermatologist");
+		 expertise.put("Orthopedic", "Orthopedic");
+		 
+		 request.setAttribute("expertise", expertise);
 	}
 
 	@Override
@@ -53,8 +50,8 @@ public class DoctorCtl extends BaseCtl {
 			pass = false;
 		}
 
-		if (DataValidator.isNull(request.getParameter("Experties"))) {
-			request.setAttribute("Experties", PropertyReader.getValue("error.require", "Experties"));
+		if (DataValidator.isNull(request.getParameter("expertise"))) {
+			request.setAttribute("expertise", PropertyReader.getValue("error.require", "expertise"));
 			pass = false;
 		}
 
@@ -68,10 +65,10 @@ public class DoctorCtl extends BaseCtl {
 		bean.setId(DataUtility.getLong(request.getParameter("id")));
 		bean.setName(DataUtility.getString(request.getParameter("Name")));
 		bean.setMobile(DataUtility.getString(request.getParameter("Mobile")));
-		bean.setExperties(DataUtility.getString(request.getParameter("Experties")));
-
+		bean.setExperties(DataUtility.getString(request.getParameter("expertise")));
+		
+		populateDTO(bean, request);
 		return bean;
-
 	}
 
 	@Override
@@ -154,7 +151,7 @@ public class DoctorCtl extends BaseCtl {
 					bean.setId(pk);
 					ServletUtility.forward(getView(), request, response);
 				} catch (Exception e) {
-					System.out.println("Doctor not added");
+					
 					e.printStackTrace();
 				}
 

@@ -77,8 +77,8 @@ public interface ORSView {
 	public String SUBJECT_LIST_CTL = APP_CONTEXT + "/ctl/SubjectListCtl";
 	public String TIMETABLE_CTL = APP_CONTEXT + "/ctl/TimeTableCtl";
 	public String TIMETABLE_LIST_CTL = APP_CONTEXT + "/ctl/TimeTableListCtl";
-	public String DOCTOR_CTL = APP_CONTEXT + "/DoctorCtl";
-	public String DOCTOR_LIST_CTL = APP_CONTEXT + "/DoctorListCtl";
+	public String DOCTOR_CTL = APP_CONTEXT + "/ctl/DoctorCtl";
+	public String DOCTOR_LIST_CTL = APP_CONTEXT + "/ctl/DoctorListCtl";
 
 	public String ERROR_CTL = APP_CONTEXT + "/ErrorCtl";
 

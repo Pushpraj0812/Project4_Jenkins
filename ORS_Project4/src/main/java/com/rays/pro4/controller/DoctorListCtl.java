@@ -1,6 +1,7 @@
 package com.rays.pro4.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -15,21 +16,18 @@ import com.rays.pro4.Util.DataUtility;
 import com.rays.pro4.Util.PropertyReader;
 import com.rays.pro4.Util.ServletUtility;
 
-@WebServlet(name = "DoctorListCtl", urlPatterns = { "/DoctorListCtl" })
+@WebServlet(name = "DoctorListCtl", urlPatterns = { "/ctl/DoctorListCtl" })
 public class DoctorListCtl extends BaseCtl {
 
 	@Override
 	protected void preload(HttpServletRequest request) {
-		DoctorModel model = new DoctorModel();
-		try {
-
-			List rlist = model.list();
-
-			request.setAttribute("rlist", rlist);
-
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		
+		HashMap<String, String> expertise = new HashMap<String, String>();
+		 expertise.put("Cardiologist", "Cardiologist");
+		 expertise.put("Dermatologist", "Dermatologist");
+		 expertise.put("Orthopedic", "Orthopedic");
+		 
+		 request.setAttribute("expertise", expertise);
 	}
 
 	@Override
@@ -40,7 +38,7 @@ public class DoctorListCtl extends BaseCtl {
 
 		bean.setName(DataUtility.getString(request.getParameter("Name")));
 		bean.setMobile(DataUtility.getString(request.getParameter("Mobile")));
-		bean.setExperties(DataUtility.getString(request.getParameter("Experties")));
+		bean.setExperties(DataUtility.getString(request.getParameter("expertise")));
 
 		return bean;
 	}

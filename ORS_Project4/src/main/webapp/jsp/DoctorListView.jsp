@@ -1,3 +1,4 @@
+<%@page import="java.util.HashMap"%>
 <%@page import="com.rays.pro4.controller.ORSView"%>
 <%@page import="com.rays.pro4.Util.HTMLUtility"%>
 <%@page import="com.rays.pro4.controller.DoctorListCtl"%>
@@ -41,7 +42,7 @@
 
 			<%
 				int next = DataUtility.getInt(request.getAttribute("nextlist").toString());
-				List rlist = (List) request.getAttribute("rlist");
+				HashMap<String, String> map = (HashMap<String, String>) request.getAttribute("expertise");
 			%>
 
 
@@ -66,9 +67,9 @@
 						placeholder="Enter Mobile"
 						value="<%=ServletUtility.getParameter("Mobile", request)%>">
 
-						&emsp; <label>Experties:</label> <%=HTMLUtility.getList("Experties", String.valueOf(bean.getExperties()), rlist)%>
-
-						&emsp; <input type="submit" name="operation"
+						&emsp; <label>Experties:</label> <%
+ 	String expertise = HTMLUtility.getList("expertise", bean.getExperties(), map);
+ %> <%=expertise%> &emsp; <input type="submit" name="operation"
 						value="<%=DoctorListCtl.OP_SEARCH%>"> &nbsp; <input
 						type="submit" name="operation" value="<%=DoctorListCtl.OP_RESET%>">
 					</td>

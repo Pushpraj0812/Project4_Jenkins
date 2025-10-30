@@ -1,3 +1,4 @@
+# tomcat image version
 FROM tomcat:9
 
 # Copy the WAR file into the Tomcat webapps directory

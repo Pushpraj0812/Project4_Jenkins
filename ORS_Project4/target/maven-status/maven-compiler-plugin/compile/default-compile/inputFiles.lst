@@ -5,6 +5,7 @@ D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\proj4\Test\Stude
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\TimeTableListCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\ErrorCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Util\DataValidator.java
+D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\DoctorListCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\MarksheetModel.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\TimeTableModel.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Bean\CollegeBean.java
@@ -27,6 +28,7 @@ D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\AppRole.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\FacultyModel.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\ForgetPasswordCtl.java
+D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Bean\DoctorBean.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\proj4\Test\MarksheetTest.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\FacultyCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\UserRegistrationCtl.java
@@ -41,6 +43,7 @@ D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\ChangePasswordCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\SubjectListCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Bean\SubjectBean.java
+D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\DoctorCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Util\DataUtility.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\ORSView.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Bean\StudentBean.java
@@ -53,6 +56,7 @@ D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\FacultyListCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\proj4\Test\CourseTest.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\proj4\Test\TimeTableTest.java
+D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\proj4\Test\DoctorTest.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\SubjectModel.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\UserModel.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Exception\ApplicationException.java
@@ -68,6 +72,7 @@ D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Util\Proper
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Bean\MarksheetBean.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\BaseCtl.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\CourseCtl.java
+D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Model\DoctorModel.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Util\EmailMessage.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\Bean\FacultyBean.java
 D:\Rays - Project4\Project4\ORS_Project4\src\main\java\com\rays\pro4\controller\CollegeCtl.java

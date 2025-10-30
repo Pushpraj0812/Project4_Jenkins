@@ -88,10 +88,6 @@
 					: DataUtility.getStringData(bean.getPhysics()))%>">
 					</td>
 
-					<%--  <td><input  onkeypress="return isNumberKey(event)" type="text" name="physics" placeholder="Enter Physics Marks"  size="25"
-                        value="<%=DataUtility.getStringData(bean.getPhysics())%>">
-                        </td> --%>
-
 					<td style="position: fixed;"><font color="red"> <%=ServletUtility.getErrorMessage("physics", request)%></font></td>
 				</tr>
 
@@ -108,9 +104,6 @@
 					: DataUtility.getStringData(bean.getChemistry()))%>">
 					</td>
 
-					<%--   <td><input  onkeypress="return isNumberKey(event)" type="text" name="chemistry" placeholder="Enter Chemistry Marks"  size="25"
-                        value="<%=DataUtility.getStringData(bean.getChemistry())%>">
-                        </td> --%>
 					<td style="position: fixed;"><font color="red"> <%=ServletUtility.getErrorMessage("chemistry", request)%></font></td>
 				</tr>
 
@@ -127,9 +120,7 @@
 						value="<%=(DataUtility.getStringData(bean.getMaths()).equals("0") ? ""
 					: DataUtility.getStringData(bean.getMaths()))%>">
 					</td>
-					<%--  <td><input  onkeypress="return isNumberKey(event)" type="text" name="maths" placeholder="Enter Maths Marks"  size="25"
-                         value="<%=DataUtility.getStringData(bean.getMaths())%>">
-                        </td> --%>
+					
 					<td style="position: fixed;"><font color="red"><%=ServletUtility.getErrorMessage("maths", request)%></font></td>
 
 				</tr>
@@ -144,8 +135,7 @@
 						if (bean.getId() > 0 && bean != null) {
 					%>
 					<td>
-						<%-- <input type="submit" name ="operation" style="width:80px;height:30px" value="<%=MarksheetCtl.OP_UPDATE%>">
-          <input type="submit" name ="operation" style="width:80px;height:30px" value="<%=MarksheetCtl.OP_CANCEL%>"></td>
+						
            --%> &nbsp; <input type="submit" name="operation"
 						value="<%=MarksheetCtl.OP_UPDATE%>"> &nbsp; <input
 						type="submit" name="operation" value="<%=MarksheetCtl.OP_CANCEL%>">
@@ -157,8 +147,7 @@
 					%>
 
 					<td colspan="2">
-						<%-- <input type="submit" name="operation" style="width:80px;height:30px"  value="<%=MarksheetCtl.OP_SAVE%>"> 
-   <input type="submit" name="operation" style="width:80px;height:30px "  value="<%=MarksheetCtl.OP_RESET%>"></td>
+						
      --%> &nbsp; &emsp; <input type="submit" name="operation"
 						value="<%=MarksheetCtl.OP_SAVE%>"> &nbsp;&nbsp; <input
 						type="submit" name="operation" value="<%=MarksheetCtl.OP_RESET%>">

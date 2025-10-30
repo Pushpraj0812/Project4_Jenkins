@@ -1,5 +1,8 @@
+# file version
 version: '3'
+# this are the services that we are using
 services:
+# service 1 i.e MySql
   mysql:
     image: mysql:8.0
     container_name: ORS_Project4-mysql
@@ -13,6 +16,7 @@ services:
     volumes:
       - ./mysql-data:/var/lib/mysql
 
+ # service 2 i.e webapp
   webapp:
     build:
       context: .
@@ -28,4 +32,4 @@ services:
 
 networks:
   mynetwork:
-    driver: bridge
+    driver: bridge # bridge driver unables us to run on same network

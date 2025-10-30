@@ -34,8 +34,9 @@
 
 			<div align="center">
 				<h1>
+
 					<%
-						List rlist = (List) request.getAttribute("rlist");
+						HashMap<String, String> map = (HashMap<String, String>) request.getAttribute("expertise");
 					%>
 					<%
 						if (bean != null && bean.getId() > 0) {
@@ -99,7 +100,10 @@
 				<tr>
 					<th align="left">Experties<span style="color: red">*</span> :
 					</th>
-					<td><%=HTMLUtility.getList("rlist", String.valueOf(bean.getExperties()), rlist)%>
+					<td>
+						<%
+							String expertise = HTMLUtility.getList("expertise", bean.getExperties(), map);
+						%> <%=expertise%>
 					</td>
 					<td style="position: fixed"><font color="red"> <%=ServletUtility.getErrorMessage("Experties", request)%></font></td>
 				</tr>
