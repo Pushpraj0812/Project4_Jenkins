@@ -21,6 +21,7 @@ import com.rays.pro4.Util.ServletUtility;
  * 
  * @author Pushpraj Singh Kachhaway
  */
+@WebFilter(filterName = "FrontCtl", urlPatterns = { "/ctl/*" })
 public class FrontControler implements Filter {
 
 	/**
