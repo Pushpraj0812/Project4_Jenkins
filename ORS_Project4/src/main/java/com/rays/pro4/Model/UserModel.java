@@ -10,8 +10,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-//import org.apache.log4j.Logger;
-
 import com.rays.pro4.Bean.UserBean;
 import com.rays.pro4.Exception.ApplicationException;
 import com.rays.pro4.Exception.DatabaseException;
