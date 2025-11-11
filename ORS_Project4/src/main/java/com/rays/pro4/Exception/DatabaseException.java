@@ -1,7 +1,7 @@
 package com.rays.pro4.Exception;
 
 /**
- * DatabaseException is propogated by DAO classes when an unhandled Database
+ * DatabaseException is propogated by when an unhandled Database
  * exception occurred.
  * 
  * @author Pushpraj Singh Kachhaway
